@@ -1,0 +1,102 @@
+input[type=text], select{
+    width: 100%;
+}
+
+input[type=number]{
+    width: 40%;
+}
+
+input[type=date]{
+    width: 50%;
+    resize: none;
+}
+button {
+    background-color: #2b2b2b;
+    color: white;
+    font-family: "Tahoma";
+    padding: 5px 30px;
+    margin-left: 5px;
+    margin-top: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    float: right;
+}
+
+button:focus {
+     outline:none;
+     border-color: rgb(50, 50, 50);
+     background-image: radial-gradient(dimgrey, rgb(50, 50, 50));
+ }
+
+button:active {
+    outline:none;
+    border-color: dimgrey;
+    background-image: radial-gradient(rgb(122, 122, 122), rgb(122, 122, 122));
+}
+
+label {
+    color: rgb(220, 220, 220);
+    font-size: 20px;
+    font-family: "Tahoma", Tahoma;
+}
+
+#div {
+    width: 1000px;
+    padding: 20px;
+    margin: auto;
+    max-width: 75%;
+}
+
+.row {
+    margin-top:10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column1 {
+    float: left;
+    width: 30%;
+    margin-top: 5px;
+}
+
+.column2 {
+    float: right;
+    width: 60%;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .column1, .column2 {
+        width: 100%;
+    }
+    button, input[type=text], select, input[type=number], input[type=date]{
+        float: left;
+    }
+    input[type=number], input[type=date]{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    #div{
+        max-width: 85%;
+    }
+
+    input[type=number], input[type=date]{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #div{
+        max-width: 90%;
+    }
+
+}
+

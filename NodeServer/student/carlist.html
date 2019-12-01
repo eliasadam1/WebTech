@@ -1,0 +1,34 @@
+<html>
+<head>
+<script src="js/carlist.js"></script>
+
+</head>
+<body>
+<label>Autók listája</label>
+<div id="div">
+        <div class="row" >
+            <div class="column1">
+                <label >Keresés: </label>
+            </div>
+            <div class="column2" id="carcontent">
+                    <input type="text" id="searchCar" placeholder="Írja be az autó nevét." class="listform">
+                    <button onclick="search()" >Keresés</button>
+                    <button onclick="createCarsTable()">Összes</button>
+            </div>s
+        </div>
+</div>
+
+<table id="carstable" class="list">
+    <tr>
+        <th class="listth">Gyártó</th>
+        <th class="listth">Neve</th>
+        <th class="listth">Fogyasztás</th>
+        <th class="listth">Év</th>
+        <th class="listth">Teljesítmény</th>
+        <th class="listth">Szín</th>
+        <th class="listth">Elérhető</th>
+    </tr>
+</table>
+
+</body>
+</html>

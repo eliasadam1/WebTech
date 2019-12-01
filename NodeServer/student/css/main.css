@@ -1,0 +1,139 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+}
+
+
+
+#menuBar {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    height: 50px;
+    position: sticky;
+}
+
+#menu{
+    width:100%;
+    position: sticky;
+    border-radius: 5px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+
+}
+
+
+.Button {
+    text-align: center;
+    width:10%;
+    float:right;
+    position: relative;
+    top:15px;
+    right: 50px;
+
+
+}
+
+.Home {
+    text-align: center;
+    width:10%;
+    float:left;
+    position: relative;
+    top:15px;
+
+}
+
+.menuButton {
+     font-size: 15px;
+     color: grey;
+     font-family: "Tahoma";
+     border: dimgrey;
+     transition-duration: 0.4s;
+    background-color: Transparent;
+ }
+
+
+
+.menuButton:hover{
+    background-color: Transparent;
+    color: white;
+    text-shadow: 2px 2px 5px #000000;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.15), 0 17px 50px 0 rgba(0,0,0,0.10);
+    outline:none;
+    border:none;
+
+}
+
+.menuButton:focus {
+    background-color: Transparent;
+    color: white;
+    text-shadow: 2px 2px 5px #000000;
+    outline:none;
+    border:none;
+
+}
+
+.menuButton:active {
+    transform: translateY(5px);
+    border:none;
+}
+
+
+
+#content {
+    display: block;
+    width:100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 1.0));
+    border-radius: 5px 5px;
+    padding: 30px;
+    margin: 10px auto 30px;
+    max-width: 75%;
+}
+
+#footer {
+    position: fixed;
+    right: 0;
+    margin-top:30px;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 1.0);
+    text-align: center;
+
+}
+.author {
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 15px;
+}
+
+
+
+input[type=date]::-webkit-inner-spin-button {
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+a:link {
+    color: #636363;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(50, 50, 50);
+}
+a:active {
+    color: #ffffff;
+}
+

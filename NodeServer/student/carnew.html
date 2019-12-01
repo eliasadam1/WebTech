@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="js/carnew.js"></script>
+</head>
+<body>
+<label >Új autó hozzáadása</label>
+        <div id="div">
+
+            <div class="row">
+                <div class="column1">
+                    <label>Gyártó</label>
+                </div>
+                <div class="column2">
+                    <select id="manufacturerNames" class="listform">
+                        <option value="Opel">Opel</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="KIA">KIA</option>
+                        <option value="Skoda">Skoda</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Tesla">Tesla</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Sungri Motor Plant">Sungri Motor Plant</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="column1">
+                    <label>Név</label>
+                </div>
+                <div class="column2">
+                    <input type="text" id="carname" placeholder="Autó neve" class="listform" value="">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="column1">
+                    <label>Fogyasztás</label>
+                </div>
+                <div class="column2">
+                    <input type="text" id="consumption" placeholder="? liter/100km" class="listform">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column1">
+                    <label>Év</label>
+                </div>
+                <div class="column2">
+                    <input type="text" id="year" placeholder="Év" class="listform">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column1">
+                    <label>Teljesítmény</label>
+                </div>
+                <div class="column2">
+                    <input type="text" id="horsepower" placeholder="Lóerő" class="listform">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column1">
+                    <label>Szín</label>
+                </div>
+                <div class="column2">
+                    <select id="color"  class="listform">
+                        <option value="white">Fehér</option>
+                        <option value="black">Fekete</option>
+                        <option value="yellow">Sárga</option>
+                        <option value="red">Piros</option>
+                        <option value="brown">Barna</option>
+                        <option value="green">Zöld</option>
+                        <option value="lightblue">Kék</option>
+                        <option value="silver">Ezüst</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column1">
+                    <label>Elérhető</label>
+                </div>
+                <div class="column2">
+                    <input type="text" id="available" placeholder="Mennyi" class="listform">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column1">
+
+                </div>
+                <div class="column2">
+                    <button onclick="addCar()">Elküld</button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
+
